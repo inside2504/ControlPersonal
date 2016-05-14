@@ -57,16 +57,7 @@ CREATE TABLE IF NOT EXISTS `empleado` (
   `fechaIngreso` varchar(100) NOT NULL,
   `sueldoEmpleado` int(11) NOT NULL,
   PRIMARY KEY (`idEmpleado`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
-
---
--- Volcado de datos para la tabla `empleado`
---
-
-INSERT INTO `empleado` (`idEmpleado`, `nombreEmpleado`, `calleEmpleado`, `numeroEmpleado`, `coloniaEmpleado`, `codigoPostal`, `ciudadEmpleado`, `estadoEmpleado`, `edadEmpleado`, `puestoEmpleado`, `fechaIngreso`, `sueldoEmpleado`) VALUES
-(3, 'Carlos Guillén González', 'Privada Las palmas', '120', 'Las palmas', '91020', 'Xalapa', 'Veracruz', 23, 'Administrador', '25 de marzo 2009', 1600),
-(4, 'José Hernández Martínez', 'La soledad', '2', 'Higueras', '91030', 'Xalapa', 'Veracruz', 30, 'Empleado', '20 de Abril 2000', 1600),
-(8, 'Isay Armando González Cruz', 'Melcho Ocampo', '67', 'Centro', '91300', 'Banderilla', 'Veracruz', 24, 'Programador', '22 de Abril 2000', 1600);
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -84,17 +75,7 @@ CREATE TABLE IF NOT EXISTS `entrada` (
   `falta` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`idEntrada`,`empleado_idEmpleado`),
   KEY `fk_days_empleado1_idx` (`empleado_idEmpleado`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
-
---
--- Volcado de datos para la tabla `entrada`
---
-
-INSERT INTO `entrada` (`idEntrada`, `empleado_idEmpleado`, `horaEntrada`, `diaEntrada`, `fechaDays`, `retardo`, `falta`) VALUES
-(1, 3, '8:30', 'Lunes', '9 de Mayo 2016', 'No', 'No'),
-(2, 4, '8:32', 'Lunes', '9 de Mayo 2016', 'Sí', 'No'),
-(4, 3, '8:30', 'Martes', '10 de Mayo 2016', 'No', 'No'),
-(5, 4, '8:35', 'Viernes', '13 de mayo 2016', 'Sí', 'No');
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -108,15 +89,7 @@ CREATE TABLE IF NOT EXISTS `nomina` (
   `empleado_idEmpleado` int(11) NOT NULL,
   PRIMARY KEY (`idNomina`,`empleado_idEmpleado`),
   KEY `fk_nomina_empleado_idx` (`empleado_idEmpleado`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Volcado de datos para la tabla `nomina`
---
-
-INSERT INTO `nomina` (`idNomina`, `sueldoNeto`, `empleado_idEmpleado`) VALUES
-(1, 1333.33, 3),
-(2, 1600, 4);
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -132,16 +105,7 @@ CREATE TABLE IF NOT EXISTS `salida` (
   `fechaDays` varchar(50) NOT NULL,
   PRIMARY KEY (`idSalida`,`empleado_idEmpleado`),
   KEY `fk_days_empleado1_idx` (`empleado_idEmpleado`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
-
---
--- Volcado de datos para la tabla `salida`
---
-
-INSERT INTO `salida` (`idSalida`, `empleado_idEmpleado`, `horaSalida`, `diaSalida`, `fechaDays`) VALUES
-(1, 3, '19:00', 'Lunes', '9 de Mayo 2016'),
-(3, 4, '19:00', 'Lunes', '9 de Mayo 2016'),
-(5, 3, '19:00', 'Martes', '10 de Mayo 2016');
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
 -- Restricciones para tablas volcadas

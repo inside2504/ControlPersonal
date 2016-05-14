@@ -428,16 +428,26 @@ public class HoraPorDia extends javax.swing.JFrame {
 
     private void menuHoraEntradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuHoraEntradaActionPerformed
         // TODO add your handling code here:
-        VentanaAsistencia.AltaHoraEntrada obj = new VentanaAsistencia.AltaHoraEntrada();
-        obj.setVisible(true);
-        dispose();
+        try{
+            VentanaAsistencia.AltaHoraEntrada obj = new VentanaAsistencia.AltaHoraEntrada();
+            obj.setVisible(true);
+            dispose();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Primero debe registrar un empleado");
+            JOptionPane.showMessageDialog(this, "Error: Base de datos vacía");
+        }
     }//GEN-LAST:event_menuHoraEntradaActionPerformed
 
     private void menuHoraSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuHoraSalidaActionPerformed
         // TODO add your handling code here:
-        VentanaAsistencia.AltaHoraSalida obj = new VentanaAsistencia.AltaHoraSalida();
-        obj.setVisible(true);
-        dispose();
+        try{
+            VentanaAsistencia.AltaHoraSalida obj = new VentanaAsistencia.AltaHoraSalida();
+            obj.setVisible(true);
+            dispose();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Primero debe registrar un empleado");
+            JOptionPane.showMessageDialog(this, "Error: Base de datos vacía");
+        }
     }//GEN-LAST:event_menuHoraSalidaActionPerformed
 
     private void diaBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diaBuscarActionPerformed
@@ -463,9 +473,14 @@ public class HoraPorDia extends javax.swing.JFrame {
 
     private void GenerarNominaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GenerarNominaActionPerformed
         // TODO add your handling code here:
-        VentanaAsistencia.GeneraNomina obj = new VentanaAsistencia.GeneraNomina();
-        obj.setVisible(true);
-        dispose();
+        try{
+            VentanaAsistencia.GeneraNomina obj = new VentanaAsistencia.GeneraNomina();
+            obj.setVisible(true);
+            dispose();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Primero debe registrar un empleado");
+            JOptionPane.showMessageDialog(this, "Error: Base de datos vacía");
+        }
     }//GEN-LAST:event_GenerarNominaActionPerformed
 
     private void comboSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboSalidaActionPerformed
@@ -480,9 +495,14 @@ public class HoraPorDia extends javax.swing.JFrame {
 
     private void ConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsultarActionPerformed
         // TODO add your handling code here:
-        VentanaAsistencia.ConsultaNomina obj = new VentanaAsistencia.ConsultaNomina();
-        obj.setVisible(true);
-        dispose();
+        try{
+            VentanaAsistencia.ConsultaNomina obj = new VentanaAsistencia.ConsultaNomina();
+            obj.setVisible(true);
+            dispose();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Primero debe registrar un empleado");
+            JOptionPane.showMessageDialog(this, "Error: Base de datos vacía");
+        }
     }//GEN-LAST:event_ConsultarActionPerformed
 
     private void generaReporteEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generaReporteEmpleadoActionPerformed
@@ -504,16 +524,27 @@ public class HoraPorDia extends javax.swing.JFrame {
 
     private void generaReporteHorasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generaReporteHorasActionPerformed
         // TODO add your handling code here:
-        VentanaAsistencia.BuscarNombre obj = new VentanaAsistencia.BuscarNombre();
-        obj.setVisible(true);
-        dispose();
+        try{
+            VentanaAsistencia.BuscarNombre obj = new VentanaAsistencia.BuscarNombre();
+            obj.setVisible(true);
+            dispose();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Primero debe registrar un empleado");
+            JOptionPane.showMessageDialog(this, "Error: Base de datos vacía");
+        }
+        
     }//GEN-LAST:event_generaReporteHorasActionPerformed
 
     private void generaReporteNominaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generaReporteNominaActionPerformed
         // TODO add your handling code here:
-        VentanaAsistencia.BuscarNomina obj = new VentanaAsistencia.BuscarNomina();
-        obj.setVisible(true);
-        dispose();
+        try{
+            VentanaAsistencia.BuscarNomina obj = new VentanaAsistencia.BuscarNomina();
+            obj.setVisible(true);
+            dispose();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Primero debe registrar un empleado");
+            JOptionPane.showMessageDialog(this, "Error: Base de datos vacía");
+        }
     }//GEN-LAST:event_generaReporteNominaActionPerformed
 
     /**
